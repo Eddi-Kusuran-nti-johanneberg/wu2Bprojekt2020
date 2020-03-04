@@ -1,3 +1,4 @@
+/* Home.html */
 #container{
     display: grid;
     grid-template-areas: 
@@ -12,20 +13,62 @@ body{
 
 #header{
     grid-area: he;
-    background: white;
+    background: rgb(240, 240, 240);
     height: 15vh;
+    border-style: none none solid none;
+    border-color: orange;
 }   
 
 #main{
     grid-area: ma;
-    background: white;
+    background: rgb(240, 240, 240);
     height: 75vh;
 }
 
 #nav{
     grid-area: nav;
-    background: white;
+    background: rgb(240, 240, 240);
     height: 10vh;
-    border-style: solid;
+    border-style: solid none none none;
     border-color: orange;
+    display: flex;
+}
+
+button{
+    height: 100%;
+    flex: 1;
+}
+
+#Searchbar{
+    height: 50%;
+    background-color: rgb(200, 200, 200);
+}
+
+/* Write.html */
+
+#containerw{
+    display: grid;
+    grid-template-areas: 
+    'hew hew hew'
+    'maw maw maw'
+    'navw navw navw';
+}
+
+#headerw{
+    grid-area: hew;
+    background: rgb(240, 240, 240);
+}
+
+#mainw{
+    grid-area: maw;
+    background: rgb(240, 240, 240);
+}
+
+#navw{
+    grid-area: navw;
+    background: rgb(240, 240, 240);
+    height: 10vh;
+    border-style: solid none none none;
+    border-color: orange;
+    display: flex;
 }
