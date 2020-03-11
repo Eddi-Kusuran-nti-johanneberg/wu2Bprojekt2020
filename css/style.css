@@ -1,6 +1,9 @@
 /* Home.html */
+
 #container{
     display: grid;
+    height: 100vh;
+    grid-template-rows: 1.5fr 7.5fr 1fr;
     grid-template-areas: 
     'he he he'
     'ma ma ma'
@@ -14,28 +17,32 @@ body{
 #header{
     grid-area: he;
     background: rgb(240, 240, 240);
-    height: 15vh;
     border-style: none none solid none;
     border-color: orange;
 }   
 
+#Settings{
+    position: fixed;
+    top: 1vh;
+    left: 82vw;
+}
+
 #main{
     grid-area: ma;
     background: rgb(240, 240, 240);
-    height: 75vh;
 }
 
 #nav{
     grid-area: nav;
     background: rgb(240, 240, 240);
-    height: 10vh;
+    height: auto;
     border-style: solid none none none;
     border-color: orange;
     display: flex;
 }
 
 button{
-    height: 100%;
+    height: auto;
     flex: 1;
 }
 
@@ -48,6 +55,8 @@ button{
 
 #containerw{
     display: grid;
+    height: 100vh;
+    grid-template-rows: 1.5fr 7.5fr 1fr;
     grid-template-areas: 
     'hew hew hew'
     'maw maw maw'
@@ -57,17 +66,134 @@ button{
 #headerw{
     grid-area: hew;
     background: rgb(240, 240, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Title{
+    height: 20%;
+    background-color: rgb(200, 200, 200);
+    text-align: center;
+}
+
+#Sidebar{
+    position: fixed;
+    left: 0vw;
+    cursor: pointer;
+    display: inline;
+}
+
+.menu{
+    position: fixed;
+    height: 100vh;
+    width: 80vw;
+    top: 0;
+    left: -90vw;
+    background: orange;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+
+
+.fade-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(50,50,50,0.5);
+    display: none;
+    z-index: 5;
+}
+
+.visible{
+    display: block;
+}
+
+.show{
+    left: 0vw;
 }
 
 #mainw{
     grid-area: maw;
     background: rgb(240, 240, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Textwrite{
+    height: 90%;
+    width: 75%;
+    background-color: rgb(200, 200, 200);
 }
 
 #navw{
     grid-area: navw;
     background: rgb(240, 240, 240);
-    height: 10vh;
+    border-style: solid none none none;
+    border-color: orange;
+    display: flex;
+}
+
+/* Favorites.html */
+
+#containerf{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1.5fr 7.5fr 1fr;
+    grid-template-areas: 
+    'hef hef hef'
+    'maf maf maf'
+    'navf navf navf';
+}
+
+#headerf{
+    grid-area: hef;
+    background: rgb(240, 240, 240);
+}
+
+
+#mainf{
+    grid-area: maf;
+    background: rgb(240, 240, 240);
+}
+
+#navf{
+    grid-area: navf;
+    background: rgb(240, 240, 240);
+    border-style: solid none none none;
+    border-color: orange;
+    display: flex;
+}
+
+/* Profile.html */
+
+#containerp{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1.5fr 7.5fr 1fr;
+    grid-template-areas: 
+    'hep hep hep'
+    'map map map'
+    'navp navp navp';
+}
+
+#headerp{
+    grid-area: hep;
+    background: rgb(240, 240, 240);
+}
+
+#mainp{
+    grid-area: map;
+    background: rgb(240, 240, 240);
+}
+
+#navp{
+    grid-area: navp;
+    background: rgb(240, 240, 240);
     border-style: solid none none none;
     border-color: orange;
     display: flex;
