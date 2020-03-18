@@ -19,12 +19,24 @@ body{
     background: rgb(240, 240, 240);
     border-style: none none solid none;
     border-color: orange;
+    display: flex;
+    justify-content: space-between;
 }   
 
 #Settings{
-    position: fixed;
-    top: 1vh;
-    left: 82vw;
+    height: 60px;
+    width: 60;
+}
+
+#Searchdiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#Searchbar{
+    height: 35%;
+    background-color: rgb(200, 200, 200);
 }
 
 #main{
@@ -46,11 +58,6 @@ button{
     flex: 1;
 }
 
-#Searchbar{
-    height: 50%;
-    background-color: rgb(200, 200, 200);
-}
-
 /* Write.html */
 
 #containerw{
@@ -67,21 +74,26 @@ button{
     grid-area: hew;
     background: rgb(240, 240, 240);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+}
+
+#Settingsw{
+    height: 60px;
+    width: 60;
 }
 
 #Title{
-    height: 20%;
+    height: 15%;
     background-color: rgb(200, 200, 200);
     text-align: center;
+    align-self: center;
 }
 
 #Sidebar{
-    position: fixed;
-    left: 0vw;
+    width: 60px;
+    height: 70px;
     cursor: pointer;
-    display: inline;
+    align-self: center;
 }
 
 .menu{
@@ -153,8 +165,14 @@ button{
 #headerf{
     grid-area: hef;
     background: rgb(240, 240, 240);
+    display: flex;
+    justify-content: flex-end;
 }
 
+#Settingsf{
+    height: 60px;
+    width: 60px;
+}
 
 #mainf{
     grid-area: maf;
@@ -184,6 +202,23 @@ button{
 #headerp{
     grid-area: hep;
     background: rgb(240, 240, 240);
+    border-style: none none solid none;
+    border-color: rgba(50,50,50,0.5);
+    display: flex;
+}
+
+#hcontainerp{
+    display: flex;
+}
+
+#Settingsp{
+    height: 60px;
+    width: 60px;
+}
+
+#Heart{
+    height: 60px;
+    width: 60px;
 }
 
 #mainp{
