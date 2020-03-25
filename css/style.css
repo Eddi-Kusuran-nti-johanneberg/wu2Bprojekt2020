@@ -3,11 +3,12 @@
 #container{
     display: grid;
     height: 100vh;
-    grid-template-rows: 1.5fr 7.5fr 1fr;
+    grid-template-rows: 1.5fr 7.5fr 1fr 0.2fr;
     grid-template-areas: 
     'he he he'
     'ma ma ma'
-    'nav nav nav';
+    'nav nav nav'
+    'fo fo fo';
 }
 
 body{
@@ -23,18 +24,18 @@ body{
     justify-content: space-between;
 }   
 
-#Settings{
+#settings{
     height: 60px;
     width: 60;
 }
 
-#Searchdiv{
+#searchdiv{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-#Searchbar{
+#searchbar{
     height: 35%;
     background-color: rgb(200, 200, 200);
 }
@@ -58,16 +59,30 @@ button{
     flex: 1;
 }
 
+#footer{
+    grid-area: fo;
+    background: rgb(200, 200, 200);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#bookikon{
+    height: 15.7px;
+}
+
 /* Write.html */
 
 #containerw{
     display: grid;
     height: 100vh;
-    grid-template-rows: 1.5fr 7.5fr 1fr;
+    grid-template-rows: 1.5fr 7.5fr 1fr 0.2fr;
     grid-template-areas: 
     'hew hew hew'
     'maw maw maw'
-    'navw navw navw';
+    'navw navw navw'
+    'fow fow fow';
 }
 
 #headerw{
@@ -77,19 +92,19 @@ button{
     justify-content: space-between;
 }
 
-#Settingsw{
+#settingsw{
     height: 60px;
-    width: 60;
+    width: 60px;
 }
 
-#Title{
+#title{
     height: 15%;
     background-color: rgb(200, 200, 200);
     text-align: center;
     align-self: center;
 }
 
-#Sidebar{
+#sidebar{
     width: 60px;
     height: 70px;
     cursor: pointer;
@@ -108,6 +123,14 @@ button{
     z-index: 10;
 }
 
+#list{
+    list-style-type: none;
+    line-height: 7em;
+}
+
+.listtext{
+    font-size: 2em;
+}
 
 .fade-layer{
     position: fixed;
@@ -136,7 +159,7 @@ button{
     align-items: center;
 }
 
-#Textwrite{
+#textwrite{
     height: 90%;
     width: 75%;
     background-color: rgb(200, 200, 200);
@@ -150,16 +173,37 @@ button{
     display: flex;
 }
 
+#footerw{
+    grid-area: fow;
+    background: rgb(200, 200, 200);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+p{
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#bookikonw{
+    height: 15.7px;
+}
+
 /* Favorites.html */
 
 #containerf{
     display: grid;
     height: 100vh;
-    grid-template-rows: 1.5fr 7.5fr 1fr;
+    grid-template-rows: 1.5fr 7.5fr 1fr 0.2fr;
     grid-template-areas: 
     'hef hef hef'
     'maf maf maf'
-    'navf navf navf';
+    'navf navf navf'
+    'fof fof fof';
 }
 
 #headerf{
@@ -169,7 +213,7 @@ button{
     justify-content: flex-end;
 }
 
-#Settingsf{
+#settingsf{
     height: 60px;
     width: 60px;
 }
@@ -177,6 +221,17 @@ button{
 #mainf{
     grid-area: maf;
     background: rgb(240, 240, 240);
+}
+
+.sectionf{
+    border-style: solid none solid none ;
+    border-color: rgb(90, 90, 90);
+    height: 10em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 #navf{
@@ -187,16 +242,30 @@ button{
     display: flex;
 }
 
+#footerf{
+    grid-area: fof;
+    background: rgb(200, 200, 200);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#bookikonf{
+    height: 15.7px;
+}
+
 /* Profile.html */
 
 #containerp{
     display: grid;
     height: 100vh;
-    grid-template-rows: 1.5fr 7.5fr 1fr;
+    grid-template-rows: 1.5fr 7.5fr 1fr 0.2fr;
     grid-template-areas: 
     'hep hep hep'
     'map map map'
-    'navp navp navp';
+    'navp navp navp'
+    'fop fop fop';
 }
 
 #headerp{
@@ -205,18 +274,25 @@ button{
     border-style: none none solid none;
     border-color: rgba(50,50,50,0.5);
     display: flex;
+    justify-content: space-between;
 }
 
-#hcontainerp{
-    display: flex;
-}
-
-#Settingsp{
+#settingsp{
     height: 60px;
     width: 60px;
 }
 
-#Heart{
+#name{
+    margin-bottom: 0;
+}
+
+#profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#heart{
     height: 60px;
     width: 60px;
 }
@@ -232,4 +308,17 @@ button{
     border-style: solid none none none;
     border-color: orange;
     display: flex;
+}
+
+#footerp{
+    grid-area: fop;
+    background: rgb(200, 200, 200);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#bookikonp{
+    height: 15.7px;
 }

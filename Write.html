@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book reader</title>
+    <title>Book Reader</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="menu">
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-            <li>Item 5</li>
+        <ul id="list">
+            <li class="listtext">Välj bok</li>
+            <li class="listtext">Beskrivning</li>
+            <li class="listtext">Kategori</li>
+            <li class="listtext">Spara</li>
+            <li class="listtext">Infoga</li>
+            <li class="listtext">Radera</li>
         </ul>
     </div>
 
@@ -21,19 +22,24 @@
 
     <div id="containerw">
         <header id="headerw">
-            <img src="/img/Sidebar.png" alt="Sidebar" id="Sidebar">
-            <input type="text" id="Title">
-            <img src="/img/Settings.png" alt="Settingsw" id="Settingsw">
+            <img src="/img/Sidebar.png" alt="Sidebar" id="sidebar">
+            <input type="text" id="title">
+            <img src="/img/Settings.png" alt="Settingsw" id="settingsw">
         </header>
         <main id="mainw">
-            <input type="text" id="Textwrite">
+            <input type="text" id="textwrite">
         </main>
         <nav id="navw">
-            <button> <a href="Home.html"><img src="/img/Home.png" alt="Home with line" ></a> </button>
+            <button> <a href="index.html"><img src="/img/Home.png" alt="Home with line" ></a> </button>
             <button> <a href="Write.html"><img src="/img/Write_Line.png" alt="Pen"></a></button>
             <button> <a href="Favorite.html"><img src="/img/Star.png" alt="Star" ></a> </button>
             <button> <a href="Profile.html"><img src="/img/User.png" alt="User icon" ></a> </button>
         </nav>
+        <footer id="footerw"> 
+            <p>Book</p>
+            <img src="/img/Ikon.png" alt="bookikon" id="bookikon">
+            <p>Reader</p>
+        </footer>
     </div>
     <script src="/js/Sidebar.js"></script>
 </body>
