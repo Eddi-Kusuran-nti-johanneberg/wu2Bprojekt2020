@@ -6,7 +6,7 @@ function showMenu(){
     fade.classList.toggle("visible");
 }
 
-let button = document.querySelector("#Sidebar");
+let button = document.querySelector("#sidebar");
 let layer = document.querySelector(".fade-layer");
 
 button.addEventListener("click",showMenu);
