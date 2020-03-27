@@ -7,23 +7,48 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="page">
+        <ul id="settingslist">
+            <li class="settingstext">Språk</li>
+            <li class="settingstext">Färgtema</li>
+            <li class="settingstext">Plats</li>
+            <li class="settingstext">Rapportera ett problem</li>
+            <li class="settingstext">Kontakta oss</li>
+            <li class="settingstext">Logga ut</li>
+        </ul>
+    </div>
+
+    <div class="settings-fade-layer"></div> 
+
     <div id="containerf">
         <header id="headerf">
             <div id="sortcontainer">
-                <img src="/img/sortlarge1.png" alt="sortlarge1">
-                <img src="/img/sortsmall1.png" alt="sortsmall1">
+                <a href="favorite.html"> <img src="/img/sortlarge2.png" alt="sortlarge2"> </a>
+                <img src="/img/sortsmall2.png" alt="sortsmall2">
             </div>
-            <img src="/img/Settings.png" alt="Settingsw" id="settingsf">
+            <img src="/img/Settings.png" alt="Settingsw" class="settings">
         </header>
         <main id="mainf">
-            <section class="sectionf">
-                <img src="/img/Filled_list.png" alt="Filled_list">
-                <h1>Favorites</h1>
-            </section>
-            <section class="sectionf">
-                <img src="/img/List.png" alt="List">
-                <h1>Create new list</h1>
-            </section>
+            <div class="favoritecontainer">
+                <article class="favoritearticle">
+                    <img src="/img/List.png" alt="List">
+                    <h1>Create new list</h1>
+                </article>
+                <article class="favoritearticle">
+                    <img src="/img/List.png" alt="List">
+                    <h1>Create new list</h1>
+                </article>
+            </div>
+            <div class="favoritecontainer">
+                <article class="favoritearticle">
+                    <img src="/img/List.png" alt="List">
+                    <h1>Create new list</h1>
+                </article>
+                <article class="favoritearticle"> 
+                    <img src="/img/List.png" alt="List">
+                    <h1>Create new list</h1>
+                </article>
+            </div>
         </main>
         <nav id="navf">
             <a href="index.html"><img src="/img/Home.png" alt="Home with line" class="navbutton"></a>
@@ -37,5 +62,6 @@
             <p>Reader</p>
         </footer>
     </div>
+    <script src="/js/settings.js"></script>
 </body>
 </html>

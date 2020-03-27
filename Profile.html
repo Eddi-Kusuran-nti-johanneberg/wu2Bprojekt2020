@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="page">
+        <ul id="settingslist">
+            <li class="settingstext">Språk</li>
+            <li class="settingstext">Färgtema</li>
+            <li class="settingstext">Plats</li>
+            <li class="settingstext">Rapportera ett problem</li>
+            <li class="settingstext">Kontakta oss</li>
+            <li class="settingstext">Logga ut</li>
+        </ul>
+    </div>
+
+    <div class="settings-fade-layer"></div> 
+
     <div id="containerp">
         <header id="headerp">
             <img src="/img/Heart.png" alt="Heart" id="heart">
@@ -14,7 +27,7 @@
                 <h1 id="name">Sven Svensson</h1>
                 <img src="/img/pfp.png" alt="Profile-Picture">
             </div>
-            <img src="/img/Settings.png" alt="Settingsp" id="settingsp">
+            <img src="/img/Settings.png" alt="Settingsp" class="settings">
         </header>
         <main id="mainp"></main>
         <nav id="navp">
@@ -29,5 +42,6 @@
             <p>Reader</p>
         </footer>
     </div>
+    <script src="/js/settings.js"></script>
 </body>
 </html>
