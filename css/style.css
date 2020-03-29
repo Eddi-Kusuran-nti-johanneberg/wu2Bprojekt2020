@@ -29,7 +29,7 @@ p{
 
 .settings{
     height: 60px;
-    width: 60;
+    width: 60px;
     cursor: pointer;
 }
 
@@ -48,7 +48,7 @@ p{
         z-index: 10;
     }
 
-    #settingslist{
+    .settingslist{
         list-style-type: none;
         line-height: 4em;
         margin-top: 4em;
@@ -444,7 +444,7 @@ p{
         z-index: 10;
     }
 
-    #settingslist{
+    .settingslist{
         list-style-type: none;
         line-height: 4em;
         margin-top: 4em;
@@ -641,7 +641,7 @@ p{
         bottom: 0;
         background-color: rgba(50,50,50,0.5);
         display: none;
-        z-index: 0.5;
+        z-index: 1;
     }
 
     .visible{

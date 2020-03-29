@@ -31,7 +31,7 @@
 
     <h3>2.1 Handskiss</h3>
     <!-- Här lägger du en bild på din handskiss av layouten. Viktigt att du beskriver vilka boxelement som ska användas. Visa även hur du tänker med ditt grid (Hur många kolumner?) -->
-    <img src="/img/Dator skiss.jpg" alt="Dator skiss" style="height: 200px;"> <img src="/img/Mobil skiss.jpg" alt="Mobil skiss" style="width: 200px;">
+    <img src="/img/Dator skiss.jpg" alt="Dator skiss" style="height: 200px;"> <img src="/img/Mobil skiss.jpg" alt="Mobil skiss" style="height: 200px;">
 
     <h3>2.2 Schema</h3>
     <!-- Vad ska du göra när? Inte för detaljerat. -->
@@ -107,7 +107,7 @@
             <td>9</td>
             <td>
             <!-- Vad görs på lektionen vecka 9? -->
-            <p> Fortsätta på mobile sidan.</p>
+            <p> Fortsätta på mobile sidan. Göra logga i photoshop. </p>
             </td>
             <td>
             <!-- Vad görs utanför lektionen vecka 9? -->
@@ -184,13 +184,14 @@
     <!-- Fyll på med dokumentation här. -->
     <p> Denna lektion så gjorde jag skissar för både hemsidan på både dator och mobil. </p>
     <p> Detta tog nästan hela lektionen då jag under skissandet tänkte mig flera idéer om hur hemsidan kan anpassas för dator men också storlek på vissa element. </p>
-    <p> Jag hade inte tid att göra ett skelett till sidan som jag hade planerat. </p>
+    <p> Jag hade inte tid att göra ett skelett till sidan som jag hade planerat. Detta får jag göra nästa lektion/tillfälle. </p>
 
     <h3>Lektion vecka 8</h3>
     <!-- Fyll på med dokumentation här. -->
     <p> Idag hade jag lite problem då det blev något fel med Github. Många av mina ändringar jag gjorde vecka 6 sparades inte. </p>
     <p> Jag tror att anledningen till detta kan ha varit att min dator fick slut på batteri och dog. </p>
-    <p> Detta tog en hel del tid att fixa. När jag var färdig började jag med ett skelett för sidan. </p>
+    <p> Detta tog en hel del tid att fixa. När jag var färdig började jag med ett skelett för sidan.  </p> 
+    <p> Jag blev inte färdig med skelettet på lektionen och fick arbeta hemma för att göra färdigt det </p>
 
     <h3>Lektion vecka 9</h3>
     <!-- Fyll på med dokumentation här. -->
@@ -216,15 +217,65 @@
 
     <h3>Lektion vecka 13</h3>
     <!-- Fyll på med dokumentation här. -->
-    <p> </p>
+    <p> Mobil sidan blev jag helt färdig med denna veckan, hade lite problem mot slutet med att få allt att sitta på rätt plats men det löste jag efter lite testing. </p>
+    <p> Dator sidan blev jag också helt färdig med denna veckan. Den var lättare att göra än förväntat och blev mycket bra.</p>
 
     <h2>4. Testning</h2>
     <!-- Testa i Chrome + Firefox eller Safari (på både dator och mobil). Skiljer sig resultatet? Har du behövt anpassa ditt kod/innehåll efter de olika webbläsarna? Hur gick valideringen? Vad säger contrastchecker.com om text/bakgrundsfärg? Hur ser resultatet ut på en riktig telefon? -->
+    <h3> Testning på dator </h3>
+    <p> På min dator ser allt mycket bra ut. Sidan är bra anpassad till mobil och dator och ser bra ut på båda. Sidan är också anpassad efter olika webbläsare </p>
+    <p> Allting skalar sig självt på ett bra sätt och visuellt ser den anpassad ut på ett sätt som passar mobil respektive dator.</p>
+
+    <h3> Testning på mobil </h3>
+    <p> Detta testet utförde jag på min iPhone Xs i Safari. Testet gick överlag bra sidan såg bra ut och fungerade korrekt. </p>
+    <p> Det negativa med testet var att jag inte hade tänkt på barena som safari har längst upp och ned på skärmen. Detta gjorde så att jag var tvungen att skrolla för att se toppen och botten av sidan.</p>
+    <p> Detta ska jag tänka på nästa gång jag designar något för mobil. </p>
+
+    <h3>HTML Validering</h3>
+    <img src="/img/Test-index.png" alt="Test-index" style="width: 700px;">
+    <p> Testet på min index sida gav mig några varningar och några error. De två error jag fick handlade om att en bild som jag hade på sidan hade mellanslag i sitt namn, detta ändrade jag på väldigt enkelt.</p>
+    <p> Två varningar klagade på att jag använde elementet h1 i en text som inte var längst upp på ett annat elemt. Jag ändrade den till h2 och alla headings under ändrade jag också på ett steg nedåt.</p>
+    <p> De två sista varningarna tyckte jag inte var något jag behövde bry mig om då de klagade på att jag inte hade ett heading element i en section. Jag vill inte ha någon heading i den sectionen så jag ignorerar denna varning. </p>
+
+    <img src="/img/Test-write.png" alt="Test-write">
+    <p> På min andra html sida fix jag ett error och en varning som handlade om samma problem, jag hade använt id två gånger. Jag ändrade snabbt det till class och ändrade i mitt css dokument (från # till .).</p>
+
+    <img src="/img/Text-favorite.png" alt="Test-favorite">
+    <p> På min tredje och fjärde html sida fick jag inga error eller varningar.</p>
+
+    <h3>CSS Validering</h3>
+    <img src="/img/Test-css.png" alt="Test-css">
+    <p> På valideringen på min css fick jag inga error eller varningar. </p>
+
+    <h3> Contrast checker </h3>
+    <img src="/img/Test-kontrast.png" alt="Test-kontrast">
+    <p> Testet på contrast checker gick bra. Jag uppfyllde 4 utav de 6 kraven. </p>
+    <p> Det sista kravet handlade om färgblinda skulle ha något problem att se olika saker på färgtemat jag använde. </p>
+    <p> När jag höll musen över detta krav så stog det att jag kunde använda en funktion för att se hur en färgblind person skulle se min sida. Vid användandet av denna funktion så tyckte jag att all text var läsbar och färger var lätt urskilja på.</p>
+    <p> Krav 2 handlade om kontrast mellan färger, då jag själv inte tyckte att det fanns något problem så tyckte jag inte att något behövde ändras på. </p>
+    <p> I det hela så gick contrast checker testet bra,</p>
 
     <h2>5. Utvärdering</h2>
     <!-- Ex: Vad gick bra/mindre bra? (i arbetet/din förmåga).
     Nyanserat: "hur hade det blivit om jag istället hade...?"
     Konkreta förbättringsförslag i produkt + process. -->
+    <p> Det första jag skulle vela lyfta fram är användandet av Github. Även om jag nu tycket att Github är väldigt bra så tror jag att läraren skulle kunna ha introducerat det till eleverna på ett bättre sätt.</p>
+    <p> Jag själv tyckte det var lite flummigt angående uppstarten av programmet och fick prova mig fram vid vissa tillfällen för att få det att funka.</p>
+    <p> Att ha dokumentation på detta sätt (att skriva i ett html dokument) tycket jag är jätte bra. Det får oss att bli mycket mer bekväma och vana vid att använda både hmtl och visual studio code.</p>
+    <p> Läraren har varit vädligt tydlig med kunskapskrav och vad som krävs av eleverna, detta är bra.</p>
+    <p> Angående själva arbetsprocessen så skulle jag säga att det har gått bra men med vissa negativa svängar här och där.</p>
+    <p> Vid vissa tillfällen så har fastnade jag helt och hade verkligen inte någon som helst aning om hur jag skulle gå till väga för att lösa problemet jag hade. </p>
+    <p> Som tur är så hade jag alltid kamrater att fråga om hjälp samt så fanns det mycket information på nätet som jag kunde använda mig av, speciellt W3Schools.</p>
+    <p> En sak som jag tänker på och som jag kommer att ha i åtanke vid nästa projekt är att anpassa mobil sidan till Safari. Som jag skrev lite längre upp så gjorde barena på Safari att man var tvungen att skrolla upp och ned vid vissa tillfällen.</p>
+    <p> Detta kan jag förbättra genom att göra sidan lite kortare på längden till nästa gång.</p>
+    <p> Ett problem som jag hade i processen var att jag sköt upp mycket även om jag hade enormt mycket tid att t.ex jobba hemma. </p>
+    <p> Det fanns såklart andra faktorer här så som annat skolarbete men i webbutvecklingen så måste jag effektivisera mitt arbete och inte skjuta upp det. </p>
+    <p> Jag hade planerat att ge dator sidan mycket mer tid men när jag väl kom till den märkte jag att det verkligen tog mycket mindre tid än förväntat </p>
+    <p> Detta ska jag verkligen tänka på till nästa gång och anpassa min planering till detta. </p>
+    <p> Något som jag också lärde mig under detta projekt är att inte använda flera element för samma sak. </p>
+    <p> Ett exempel: Jag hade samma footer på alla mina sidor, i början så hade jag i mitt css dokument separata footer element för varje sida.</p>
+    <p> Senare i arbetet märkte jag att detta inte behövdes och ändrade så att jag hade ett och samma css element för alla html sidor. </p>
+    <p> Om jag hade gjort så från början så skulle jag ha kunnat spara tid då jag inte skulle skriva samma saker flera gånger. Det här tar jag med mig tll nästa projekt. </p>
 
 </body>
 </html>
